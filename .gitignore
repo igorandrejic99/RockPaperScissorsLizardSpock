@@ -25,11 +25,12 @@ project.lock.json
 project.fragment.lock.json
 artifacts/
 
-# Ignore secrets and settings files
+# Ignore secrets and settings files, except appSettings.Test.json
 secrets.json
 *.Secret.config
 appsettings.Development.json
 appsettings.*.json
+!appSettings.Test.json
 
 # Ignore logs and temporary files
 *.log
@@ -39,7 +40,6 @@ tmp/
 *.pid
 
 # Ignore Docker files that shouldn’t be versioned
-Dockerfile
 docker-compose.override.yml
 .docker/
 
