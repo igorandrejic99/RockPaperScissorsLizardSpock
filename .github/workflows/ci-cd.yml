@@ -33,7 +33,7 @@ jobs:
 
       # Step 5: Run Unit Tests
       - name: Run Unit Tests
-        run: dotnet test test/RockPaperScissors.UnitTests/RockPaperScissors.UnitTests.csproj --no-build --configuration Release
+        run: dotnet test test/RockPaperScissors.UnitTests/RockPaperScissors.Tests.csproj --no-build --configuration Release
 
       # Step 6: Run Integration Tests
       - name: Run Integration Tests
