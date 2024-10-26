@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: . # Looks for the Dockerfile in the current directory
+      dockerfile: Dockerfile
+    container_name: rock-paper-scissors-api
+    ports:
+      - "5081:5081"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production

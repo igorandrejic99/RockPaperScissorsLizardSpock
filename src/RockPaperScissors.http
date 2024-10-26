@@ -1,0 +1,6 @@
+@RockPaperScissors_HostAddress = http://localhost:5081
+
+GET {{RockPaperScissors_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
