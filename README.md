@@ -23,7 +23,7 @@ The primary components of this project include:
 - **Configuration**: Defines configuration options, Swagger options, and application settings.
 - **Infrastructure**: Contains classes interacting with external services.
 - **Models**: Defines data models used throughout the API.
-- **Docker**: Configures Docker for containerization.
+- **Docker files**: Configures Docker for containerization.
 
 ## Features
 
@@ -117,10 +117,10 @@ The application is configured to run using Docker Compose, which simplifies mult
 
 ## Testing
 
-### Running Unit and Integration Tests
+### Running Unit Tests
 1. **Navigate to the test directory**:
     ```bash
-    cd test/RockPaperScissors.Tests
+    cd test/RockPaperScissors.UnitTests
     ```
 
 2. **Run tests**:
@@ -128,9 +128,17 @@ The application is configured to run using Docker Compose, which simplifies mult
     dotnet test
     ```
 
-### Dockerized Tests
-Tests can also be executed within a Docker container as part of a CI/CD pipeline, ensuring consistent test results across environments.
+### Running Integration Tests
+1. **Navigate to the test directory**:
+    ```bash
+    cd test/RockPaperScissors.IntegrationTests
+    ```
 
+2. **Run tests**:
+    ```bash
+    dotnet test
+    ```
+    
 ## Dockerization
 
 This project includes both a `Dockerfile` and `docker-compose.yml` file for containerization:
@@ -141,10 +149,9 @@ Defines the setup for the application, splitting into build and runtime stages.
 ### Docker Compose
 The `docker-compose.yml` simplifies running multi-container setups if needed in the future, such as adding a database container.
 
-### CI/CD Pipeline (GitHub Actions)
-1. **Build** - Builds the application and runs tests.
+### CI Pipeline (GitHub Actions)
+1. **Build** - Builds the application.
 2. **Test** - Executes unit and integration tests within the pipeline.
-3. **Deploy** - Can be configured to push the Docker image to a registry.
 
 ## Development Notes
 
