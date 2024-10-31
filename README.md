@@ -40,7 +40,7 @@ The primary components of this project include:
 - **Docker** - Containerizes the application.
 - **Swagger** - Documents API endpoints.
 - **xUnit, Moq, and Polly** - Used for testing and retry logic.
-- **CI/CD Pipeline** - Automates build, test, and deployment processes.
+- **CI Pipeline** - Automates build and test when doing push on main branch.
 
 ## Setup and Installation
 
