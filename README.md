@@ -3,6 +3,8 @@
 
 This project is a RESTful API that simulates the game **Rock-Paper-Scissors-Lizard-Spock**. The API provides endpoints for retrieving available choices, generating a random choice, and playing a game round against the computer.
 
+This project was designed as a monolithic application rather than a microservice architecture. Given its focus on simulating the Rock-Paper-Scissors-Lizard-Spock game, all functionality—such as retrieving choices, playing game rounds, and generating computer choices, is tightly interdependent and centered on the core game logic. A monolithic structure provides clear organization and straightforward maintainability for these features without the added complexity that a microservices approach would introduce. Since there are no distinct subdomains requiring separate scalability or independent deployment, the monolithic architecture is seen as an optimal and efficient choice for this application.
+
 ## Table of Contents
 - [Project Structure](#project-structure)
 - [Features](#features)
@@ -66,7 +68,7 @@ The primary components of this project include:
 
 ### Running with Docker Compose
 
-The application is configured to run using Docker Compose, which simplifies multi-container setups. 
+The application is configured to run using Docker Compose, which simplifies multi-container setups that could be needed in future. 
 
 1. **Start the application**:
     ```bash
@@ -118,23 +120,23 @@ The application is configured to run using Docker Compose, which simplifies mult
 ## Testing
 
 ### Running Unit Tests
-1. **Navigate to the test directory**:
+1. **Navigate to the unit test directory**:
     ```bash
     cd test/RockPaperScissors.UnitTests
     ```
 
-2. **Run tests**:
+2. **Run unit tests**:
     ```bash
     dotnet test
     ```
 
 ### Running Integration Tests
-1. **Navigate to the test directory**:
+1. **Navigate to the integration test directory**:
     ```bash
     cd test/RockPaperScissors.IntegrationTests
     ```
 
-2. **Run tests**:
+2. **Run integration tests**:
     ```bash
     dotnet test
     ```
@@ -152,6 +154,7 @@ The `docker-compose.yml` simplifies running multi-container setups if needed in 
 ### CI Pipeline (GitHub Actions)
 1. **Build** - Builds the application.
 2. **Test** - Executes unit and integration tests within the pipeline.
+The CI pipeline in GitHub Actions is an automated workflow that ensures code quality by building the application and running all unit and integration tests each time code is pushed on main branch, helping catch errors early and maintain a stable codebase.
 
 ## Development Notes
 
