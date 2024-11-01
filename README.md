@@ -1,5 +1,5 @@
 
-# RockPaperScissors API
+# RockPaperScissorsLizardSpock API
 
 This project is a RESTful API that simulates the game **Rock-Paper-Scissors-Lizard-Spock**. The API provides endpoints for retrieving available choices, generating a random choice, and playing a game round against the computer.
 
@@ -14,7 +14,6 @@ This project was designed as a monolithic application rather than a microservice
 - [API Endpoints](#api-endpoints)
 - [Testing](#testing)
 - [Dockerization](#dockerization)
-- [Development Notes](#development-notes)
 
 ## Project Structure
 
@@ -86,7 +85,7 @@ The application is configured to run using Docker Compose, which simplifies mult
 ## API Endpoints
 
 ### Base URL
-- `http://localhost:5081/api/v1/game`
+- `http://localhost:5081/game`
 
 ### Available Endpoints
 
@@ -155,9 +154,3 @@ The `docker-compose.yml` simplifies running multi-container setups if needed in 
 1. **Build** - Builds the application.
 2. **Test** - Executes unit and integration tests within the pipeline.
 The CI pipeline in GitHub Actions is an automated workflow that ensures code quality by building the application and running all unit and integration tests each time code is pushed on main branch, helping catch errors early and maintain a stable codebase.
-
-## Development Notes
-
-- **Error Handling**: The application employs structured logging to capture detailed error messages for both HTTP and internal service errors.
-- **Logging**: Each service and controller is instrumented with logging to trace API calls and game results.
-- **Swagger**: Detailed XML comments are generated for each endpoint, making it easy to understand API usage.
