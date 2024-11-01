@@ -26,7 +26,7 @@ namespace RockPaperScissorsGame.Configuration
                     {
                         Title = $"RockPaperScissors API {description.ApiVersion}",
                         Version = description.ApiVersion.ToString(),
-                        Description = "An API for playing Rock Paper Scissors Lizard Spock"
+                        Description = "An API for playing a game of Rock Paper Scissors Lizard Spock"
                     });
             }
 

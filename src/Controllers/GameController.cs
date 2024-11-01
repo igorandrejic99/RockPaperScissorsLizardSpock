@@ -13,6 +13,7 @@ namespace RockPaperScissorsGame.Controllers
     /// </summary>
     [ApiController]
     [Route("api/v{version:apiVersion}/[controller]")]
+    [Route("[controller]")]
     [ApiVersion("1.0")]
     public class GameController : ControllerBase
     {
