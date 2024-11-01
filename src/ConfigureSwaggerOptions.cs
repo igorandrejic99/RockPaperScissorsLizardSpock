@@ -24,9 +24,9 @@ namespace RockPaperScissorsGame.Configuration
                     description.GroupName,
                     new OpenApiInfo
                     {
-                        Title = $"RockPaperScissors API {description.ApiVersion}",
+                        Title = $"RockPaperScissorsLizardSpock API {description.ApiVersion}",
                         Version = description.ApiVersion.ToString(),
-                        Description = "An API for playing a game of Rock Paper Scissors Lizard Spock"
+                        Description = "An API for playing a game of Rock Paper Scissors Lizard Spock."
                     });
             }
 
