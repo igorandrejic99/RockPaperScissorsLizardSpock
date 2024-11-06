@@ -51,7 +51,7 @@ The primary components of this project include:
 ### Installation
 1. **Clone the repository**:
     ```bash
-    git clone <repository_url>
+    git clone https://github.com/igorandrejic99/RockPaperScissorsLizardSpock.git
     cd RockPaperScissors
     ```
 
