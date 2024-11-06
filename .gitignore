@@ -1,0 +1,53 @@
+# Ignore Visual Studio files
+.vscode/
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Ignore build and output directories
+bin/
+obj/
+out/
+
+# Ignore user-specific files
+*.rsuser
+*.csproj.user
+
+# Ignore publish and package files
+*.publish.xml
+*.nupkg
+*.snupkg
+
+# Ignore .NET generated files
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Ignore secrets and settings files, except appSettings.Test.json
+secrets.json
+*.Secret.config
+appsettings.Development.json
+appsettings.*.json
+!appSettings.Test.json
+
+# Ignore logs and temporary files
+*.log
+logs/
+temp/
+tmp/
+*.pid
+
+# Ignore Docker files that shouldn’t be versioned
+docker-compose.override.yml
+.docker/
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Ignore Test Results
+TestResults/
